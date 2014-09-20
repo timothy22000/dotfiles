@@ -71,7 +71,29 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%1/%\/%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n› '
+env_color() {
+  color=cyan
+  if [[ -f ~/.env ]]
+  then
+    case `cat ~/.env` in
+      dev)
+        color=green
+        ;;
+      stage)
+        color=yellow
+        ;;
+      prod)
+        color=red
+        ;;
+      *)
+        color=cyan
+        ;;
+    esac
+  fi
+  echo "%{$bg[$color]%}"
+}
+
+export PROMPT=$'\n$(rb_prompt)in $(directory_name) $(git_dirty)$(need_push)\n$(env_color)› %{$reset_color%}'
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
