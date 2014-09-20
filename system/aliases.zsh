@@ -8,3 +8,8 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+alias less="less -SI -R"
+alias suroot="sudo su -"
+alias format_json="python -m json.tool"
+alias format_xml="xmllint --format -"
