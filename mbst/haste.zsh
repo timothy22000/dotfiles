@@ -8,6 +8,6 @@ haste() {
     host=`cat $configfile`
     cat \
       | curl -X POST -s --data-binary @- ${host}/documents \
-      | awk -F '"' '{print "http://'${host}'/"$4 }';
+      | awk -F '"' '{print "'${host}'"$4 }';
   fi
 }
