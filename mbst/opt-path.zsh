@@ -1,8 +1,6 @@
 if [ -d ~/dev/opt/ ];
 then
-  opts=`ls ~/dev/opt/*/bin`
-
-  for opt in $opts; do
-    export PATH=$PATH:$opt/bin
+  for opt in `ls -d ~/dev/opt/*/bin`; do
+    export PATH=$PATH:$opt
   done
 fi
