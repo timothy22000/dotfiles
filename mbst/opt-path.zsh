@@ -4,3 +4,4 @@ then
     export PATH=$PATH:$opt
   done
 fi
+export PATH=~/dev/infra/bin:$PATH
