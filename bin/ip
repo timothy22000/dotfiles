@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Prints the current IP address by curl'ing checkip.dyndns.org
+
+curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'

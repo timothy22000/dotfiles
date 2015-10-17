@@ -19,7 +19,7 @@ base=~/AeroFS/todo
 # Run our new web 2.0 todo list application and raise millions of VC dollars.
 if [ $# -eq 0 ];
 then
-  cd $base && find .
+  cd ${base} && find .
 else
-  touch $base/"$*"
+  touch ${base}/"$*"
 fi
