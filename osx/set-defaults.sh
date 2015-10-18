@@ -81,3 +81,6 @@ defaults write com.apple.iTunes disablePingSidebar -bool true
 
 # Disable all the other Ping stuff in iTunes
 defaults write com.apple.iTunes disablePing -bool true
+
+# Don’t automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
