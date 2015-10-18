@@ -1,38 +1,51 @@
-# Sample gitconfig
-#
-
 [hub]
-        protocol = https
+    protocol = https
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+    name =
+    email =
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
+    helper = GIT_CREDENTIAL_HELPER
 [alias]
-        co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
+    co = checkout
+    promote = !$ZSH/bin/git-promote
+    wtf     = !$ZSH/bin/git-wtf
+    rank-contributors = !$ZSH/bin/git-rank-contributors
+    count   = !git shortlog -sn
+    st = status -sb
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    ff = pull --ff-only # get new commits from remote, will fail with local-only commits - see `up`
+    up = pull --rebase # get new commits from remote, local-only commits will be rebased onto those fetched
+    fm = merge --ff-only --log # get commits from another branch.
+    ml = merge --log # will add the short commit messages to the merge commit message
+    lol = log --pretty=oneline --abbrev-commit --graph --decorate # a colorful tree of commits
+    amend = commit --amend -C HEAD # add staged files to previous commit, retaining the original message
+    cf = show --name-only # e.g. git cf <commit>, show the files changed in a commit.
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
 [core]
-        excludesfile = ~/.gitignore
-        editor = vim
+    excludesfile = ~/.gitignore
+    editor = vim
+    autocrlf = input
 [apply]
-        whitespace = nowarn
+    whitespace = nowarn
 [mergetool]
-        keepBackup = false
+    keepBackup = false
 [difftool]
-        prompt = false
+    prompt = false
 [help]
-        autocorrect = 1
+    autocorrect = 1
 [push]
-        # See `git help config` (search for push.default)
-        # for more information on different options of the below setting.
-        #
-        # Setting to git 2.0 default to surpress warning message
-        default = simple
+    # See `git help config` (search for push.default)
+    # for more information on different options of the below setting.
+    #
+    # Setting to git 2.0 default to surpress warning message
+    default = simple
+[rerere]
+    enabled = 1
