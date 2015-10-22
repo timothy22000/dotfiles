@@ -1,0 +1,5 @@
+--ignore-dir=.idea
+--ignore-dir=target
+--ignore-file=match:.*\.iml
+--smart-case
+--pager=less -r
