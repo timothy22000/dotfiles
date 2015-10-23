@@ -13,3 +13,5 @@ alias less="less -SI -R"
 alias suroot="sudo su -"
 alias format_json="python -m json.tool"
 alias format_xml="xmllint --format -"
+
+alias dev="cd ${HOME}/dev"
