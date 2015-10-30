@@ -16,6 +16,6 @@ fi
 brew install grc coreutils spark
 
 # Install useful utilities
-brew install httpie z jq keybase
+brew install httpie z jq keybase gnupg2
 
 exit 0
