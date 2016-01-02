@@ -5,6 +5,7 @@
     fontSize: 12
     invisibles: {}
     showInvisibles: true
+    tabType: "soft"
   core:
     excludeVcsIgnoredPaths: true
     ignoredNames: [
