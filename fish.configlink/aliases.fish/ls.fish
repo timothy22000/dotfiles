@@ -1,10 +1,10 @@
-if gls > /dev/null
+if which gls > /dev/null
   function ls
     gls -F --color
   end
 else
   function ls
-    command ls -G $argv
+    command ls --color=auto $argv
   end
 end
 

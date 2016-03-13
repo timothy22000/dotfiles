@@ -1,10 +1,10 @@
-if gls > /dev/null
+if which gls > /dev/null
   function la
     gls -lAh --color
   end
 else
   function la
-    command ls -lAhG $argv
+    command ls -lAh --color=auto $argv
   end
 end
 
