@@ -1,9 +1,9 @@
-# dalamar42 does holman's dotfiles
+# timothy22000 does holman's dotfiles
 
 ## dotfiles
 
 Your dotfiles are how you personalize your system. These are mine, forked from
-Tom McAdam's, who forked them from Zach Holman's.
+Thomas Maroulis's, who forked them from Zach Holman's.
 
 If you're interested in the philosophy behind why projects like these are
 awesome, you might want to [read his post on the
@@ -14,7 +14,7 @@ subject](http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/).
 Run this:
 
 ```sh
-git clone https://github.com/tfm/dotfiles.git ~/.dotfiles
+git clone https://github.com/timothy22000/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
@@ -42,7 +42,7 @@ symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
 A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser
 above and see what components may mesh up with you.
-[Fork it](https://github.com/dalamar42/dotfiles/fork), remove what you don't
+[Fork it](https://github.com/timothy22000/dotfiles/fork), remove what you don't
 use, and build on what you do use.
 
 ## components
@@ -70,12 +70,12 @@ said, I do use this as *my* dotfiles, so there's a good chance I may break
 something if I forget to make a check for a dependency.
 
 If you're brand-new to the project and run into any blockers, please
-[open an issue](https://github.com/dalamar42/dotfiles/issues) on this repository
+[open an issue](https://github.com/timothy22000/dotfiles/issues) on this repository
 and I'd love to get it fixed for you!
 
 ## thanks
 
-Thanks to [Tom McAdam](https://github.com/tfm), then transitively 
+Thanks to [Thomas Maroulis](https://github.com/dalamar42), [Tom McAdam](https://github.com/tfm), then transitively 
 to [Zach Holman](http://github.com/holman) and his thanks:
 
 "I forked [Ryan Bates](http://github.com/ryanb)' excellent
